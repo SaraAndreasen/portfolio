@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #ffe863;
+  --secondary-color: #373737;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -10,6 +10,8 @@ h2 {
 
 h1 {
   font-size: 96px !important;
+  font-family: "Playfair Display", serif;
+  margin-top: 30px !important;
 }
 
 h3 {
@@ -31,23 +33,32 @@ p {
 .primary-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--secondary-color);
   border-radius: 4px;
   margin: 20px;
   text-decoration: none;
+  border: 0;
   padding: 20px 15px;
 }
 .primary-link:hover {
-  color: blue;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .secondary-link {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   margin: 20px;
   text-decoration: none;
+  background-color: rgb(255, 255, 255);
   padding: 20px 15px;
+}
+
+.secondary-link:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .homepage-link {
@@ -80,11 +91,20 @@ p {
     font-size: 40px !important;
   }
   h3 {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
   .btn-primary {
     background-color: #6c63ff !important;
     border-color: #6c63ff !important;
+  }
+  img {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  img {
+    margin-bottom: 10px;
   }
 }
 
@@ -92,7 +112,7 @@ p {
   .btn-primary {
     background: var(--primary-color) !important;
     box-shadow: var(--box-shadow) !important;
-    color: white !important;
+    color: var(--secondary-color) !important;
     border-radius: 4px !important;
     margin: 20px !important;
     text-decoration: none !important;
@@ -102,6 +122,17 @@ p {
   .about-paragraphs {
     max-width: 80%;
     margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-paragraphs {
+    max-width: 60%;
+    margin-bottom: 50px;
+  }
+  img {
+    margin-top: 60px;
   }
 }
 
@@ -109,5 +140,14 @@ p {
   .about-paragraphs {
     max-width: 60%;
     margin-bottom: 50px;
+    margin-top: 15px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-paragraphs {
+    max-width: 60%;
+    margin-bottom: 50px;
+    margin-top: 110px !important;
   }
 }
