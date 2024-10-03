@@ -4,14 +4,13 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-  font-size: 48px !important;
-}
-
 h1 {
   font-size: 96px !important;
   font-family: "Playfair Display", serif;
   margin-top: 30px !important;
+}
+h2 {
+  font-size: 48px !important;
 }
 
 h3 {
@@ -28,6 +27,16 @@ p {
   margin-top: 40px;
   justify-content: center;
   text-transform: capitalize;
+}
+
+.hero {
+  padding: 160px 10px;
+  background-color: #fbe980;
+}
+
+.content-break {
+  height: 100px;
+  background-image: linear-gradient(180deg, #fbe980, rgb(255, 255, 255));
 }
 
 .primary-link {
