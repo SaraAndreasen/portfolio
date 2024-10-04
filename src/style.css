@@ -185,6 +185,10 @@ p {
     display: flex;
     background-color: #fbe88077;
     border-radius: 10px;
+    font-size: 25px !important;
+  }
+  .homepage-project a {
+    color: #000;
   }
   a:hover {
     text-decoration: none;
