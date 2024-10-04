@@ -39,6 +39,10 @@ p {
   background-image: linear-gradient(180deg, #fbe980, rgb(255, 255, 255));
 }
 
+.fill-div {
+  height: 50px;
+}
+
 .primary-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -150,6 +154,41 @@ p {
     max-width: 60%;
     margin-bottom: 50px;
     margin-top: 15px !important;
+  }
+  .homepage-project {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .homepage-project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .text-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .homepage-project:hover .text-overlay {
+    display: flex;
+    background-color: #fbe88077;
+    border-radius: 10px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #000;
   }
 }
 
