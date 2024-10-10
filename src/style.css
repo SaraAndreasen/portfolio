@@ -15,7 +15,6 @@ h2 {
 
 h3 {
   font-size: 24px !important;
-  opacity: 0.7;
 }
 
 p {
@@ -96,6 +95,34 @@ p {
   text-decoration: underline;
 }
 
+.soMe {
+  background-color: #373737;
+  color: var(--primary-color);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.soMe h3 {
+  opacity: 1;
+  padding: 15px;
+}
+
+.soMe ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.soMe ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  font-size: 48px;
+  color: var(--primary-color);
+}
 @media (max-width: 576px) {
   h1 {
     font-size: 55px !important;
