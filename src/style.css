@@ -128,6 +128,32 @@ i {
   font-size: 48px;
   color: var(--primary-color);
 }
+
+footer {
+  background-color: #373737;
+  padding: 15px !important;
+}
+
+footer a {
+  color: #fbe980;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.row {
+  margin: 0px !important;
+}
+
+footer ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
 @media (max-width: 576px) {
   h1 {
     font-size: 55px !important;
