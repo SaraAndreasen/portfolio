@@ -21,12 +21,18 @@
       src="https://kit.fontawesome.com/055eb1503d.js"
       crossorigin="anonymous"
     ></script>
+    <meta
+      name="description"
+      content="Sara is a frontend developer specialising in the React framework, based in Copenhagen, Denmark. Contact Sara here"
+    />
     <title>Contact me | Sara Andreasen</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">Sara Andreasen</a>
+        <a class="navbar-brand" href="../index.html" title="Homepage"
+          >Sara Andreasen</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -44,18 +50,26 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
+              <a
+                class="nav-link text-center"
+                title="Homepage"
+                href="../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-center"
-                aria-current="page"
-                href="/about/about.html"
+                href="../about/about.html"
+                title="About Sara"
                 >About me</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-center" href="/projects/projects.html"
+              <a
+                class="nav-link text-center"
+                href="/projects/projects.html"
+                title="Saras projects"
                 >Projects</a
               >
             </li>
@@ -63,6 +77,8 @@
               <a
                 class="nav-link active text-center"
                 href="/contact/contact.html"
+                title="Contact Sara"
+                aria-current="page"
                 >Contact me</a
               >
             </li>
